@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box; /*нужно для выставленного размера размера*/
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  background: cornflowerblue;
+  color: white;
+  padding: 50px;
+}
+
+.navBar {
+  display: flex;
+  background: thistle;
+  justify-content: space-around;
+}
+
+.navBar a {
+  color: red;
+  text-decoration: none;
+  text-align: align;
+  padding: 10px 20px;
+}
+
+.navBar a:hover {
+  background-color: darkgray;
+}
+
+.side {
+  flex: 30%;
+  padding: 20px;
+  background-color: wheat;
+}
+
+.main {
+  flex: 70%;
+  background-color: cornsilk;
+  padding: 20px;
+  flex-direction: row;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: thistle;
+}
+
+.someImg {
+  height: 50px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 700px) {
+  * {
+    font-size: 10px;
+  }
+  .wrapper .navBar {
+    flex-direction: column;
+  }
+  .main {
+    flex-direction: column;
+  }
+}
