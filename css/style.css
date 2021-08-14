@@ -8,69 +8,49 @@ body {
   padding: 0;
 }
 
-.header {
-  text-align: center;
-  text-transform: uppercase;
-  background: cornflowerblue;
-  color: white;
-  padding: 50px;
-}
-
-.navBar {
-  display: flex;
-  background: thistle;
-  justify-content: space-around;
-}
-
-.navBar a {
-  color: red;
+a,
+a:hover,
+a:visited,
+a:link,
+a:active {
   text-decoration: none;
-  text-align: align;
-  padding: 10px 20px;
 }
 
-.navBar a:hover {
-  background-color: darkgray;
+.nav_container {
+  margin-bottom: 50px;
 }
 
-.side {
-  flex: 30%;
-  padding: 20px;
-  background-color: wheat;
+.ul_container {
 }
 
-.main {
-  flex: 70%;
-  background-color: cornsilk;
-  padding: 20px;
-  flex-direction: row;
-}
-
-.footer {
-  padding: 20px;
+.nav_item {
+  display: inline-block;
+  width: 200px;
+  background-color: blue;
+  color: whitesmoke;
   text-align: center;
-  background-color: thistle;
-}
-
-.someImg {
-  height: 50px;
-  background-color: whitesmoke;
   border: 1px solid black;
 }
 
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
+.nav_item:hover {
+  background-color: darkblue;
 }
 
-@media screen and (max-width: 700px) {
-  * {
-    font-size: 10px;
-  }
-  .wrapper .navBar {
-    flex-direction: column;
-  }
-  .main {
-    flex-direction: column;
-  }
+.nav_item_container {
+  display: inline-block;
+  position: relative;
+}
+
+.sub_menu {
+  display: none;
+  position: absolute;
+}
+
+.nav_item_container:hover > .sub_menu {
+  display: block;
+}
+
+.drop_down {
+  top: 100%;
+  left: -40px;
 }
